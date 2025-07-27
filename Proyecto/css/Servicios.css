@@ -1,0 +1,115 @@
+/* global reset and root variables */
+:root {
+  --primary: #2e7d32;
+  --secondary: #a5d6a7;
+  --light: #ffffff;
+  --dark-text: #1b5e20;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--secondary);
+  color: var(--dark-text);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--light);
+  color: var(--dark-text);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--dark-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+#servicios h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.servicios-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.servicios-lista li {
+  background: var(--light);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-top: 4px solid var(--primary);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.servicios-lista h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.servicios-lista p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}

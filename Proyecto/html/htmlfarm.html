@@ -3,58 +3,110 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Farmacia SaludTotal</title>
+    <title>Servicios - Medicinas Belén</title>
 
-    <!-- ✅ Ruta correcta al CSS -->
+   
     <link rel="stylesheet" href="../css/cssfarm.css">
 </head>
 <body>
+    
     <header>
         <div class="logo">
-           <img src="/Imagenes/Logo.jpg" alt="Logo Farmacia" style="width: 80px;">
+            <img src="/Imagenes/Logo.jpg" alt="Logo Farmacia" class="logo-img">
             <h1>SaludTotal</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="carousel" id="inicio">
-            <div class="carousel-track">
-                <!-- Aquí irán slides -->
-                <section class="hero">
-                    <img src="/Imagenes/Vitaminas2.jpg" alt="Oferta 1">
+    <!-- Carrusel -->
+    <main id="inicio">
+    <section class="carousel">
+  <!-- Botones de navegación -->
+                <button class="carousel-btn btn-prev">⟨</button>
+
+                <div class="carousel-track">
+                    <section class="hero">
+                    <img src="/Imagenes/Vitaminas2.jpg" alt="Oferta Vitaminas">
                     <div class="hero-content">
                         <h2>Descuento en Vitaminas</h2>
-                        <p>Aprovecha hasta 50% en suplementos</p>
+                        <button onclick="window.open('CatalagoV', '_blank')">
+                        Más información de vitaminas
+                        </button>
                     </div>
-                </section>
-                <section class="hero">
-                    <img src="/Imagenes/Medicamentos.jpg" alt="Oferta 2">
+                    </section>
+
+                    <section class="hero">
+                    <img src="/Imagenes/Medicamentos.jpg" alt="Oferta Medicamentos">
                     <div class="hero-content">
-                        <h2>Medicamentos Genéricos</h2>
-                        <p>Accesibles y certificados</p>
+                        <h2>Ofertas en Medicamentos</h2>
+                        <button onclick="window.open('CatalagoV', '_blank')">
+                        Más información de medicamentos
+                        </button>
                     </div>
-                </section>
+                    </section>
+                </div>
+
+ 
+        <button class="carousel-btn btn-next">⟩</button>
+    </section>
+
+
+       
+        <section id="productos" class="centrado">
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 2rem;">
+                <div class="card">
+                    <img src="/Imagenes/Centrum.jpg" alt="Centrum" style="width:100%;">
+                    <h3>Centrum</h3>
+                    <p>Lps. 450.00</p>
+                </div>
+                <div class="card">
+                    <img src="/Imagenes/Astrymin.jpg" alt="Astrymnin" style="width:100%;">
+                    <h3>Astrymnin</h3>
+                    <p>Lps. 120.00</p>
+                </div>
+                <div class="card">
+                    <img src="/Imagenes/Panadol kids.jpg" alt="Panadol Kids" style="width:100%;">
+                    <h3>Panadol Kids</h3>
+                    <p>Lps. 75.00</p>
+                </div>
+                <div class="card">
+                    <img src="/Imagenes/Pepto-bismol.jpg" alt="Pepto Bismol" style="width:100%;">
+                    <h3>Pepto Bismol</h3>
+                    <p>Lps. 95.00</p>
+                </div>
+
+                   <div class="catalog-buttons">
+                         <button onclick="window.open('html/CatalagoV.html', '_blank')">Catálogo de Vitaminas</button>
+                         <button onclick="window.open('html/CatalogoF.html', '_blank')">Catálogo de Fármacos</button>
+                    </div>
             </div>
         </section>
-       
-        <div class="centrado">
-            <label label class="btn-label" onclick="window.open('contacto.html', '_blank')">Contacto</label>
-        </div>
 
-    
+        
+   <div class="centrado botones-navegacion">
+            <label class="btn-label" onclick="window.open('contacto.html', '_blank')">Contacto</label>
+            <label class="btn-label" onclick="window.open('preguntas.html', '_blank')">Preguntas</label>
+            <label class="btn-label" onclick="window.open('Servicios.html', '_blank')">Servicios</label>
+            <label class="btn-label" onclick="window.open('blog.html', '_blank')">Blog</label>
+            <label class="btn-label" onclick="window.open('PaginaD.html', '_blank')">Donaciones</label>
+    </div>
 
 
-    <footer>
+
+    </main>
+
+ 
+    <footer id="contacto">
         <p>© 2025 SaludTotal - Todos los derechos reservados</p>
     </footer>
 
-    <!-- ✅ Ruta correcta al JS -->
+    
     <script src="../javascript/jsfarm.js"></script>
 </body>
 </html>

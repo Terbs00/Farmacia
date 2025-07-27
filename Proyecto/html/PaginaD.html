@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donaciones - Medicinas Belén</title>
+  <link rel="stylesheet" href="../css/PaginaD.css">
+</head>
+<body>
+  <header>
+    <h1>Donaciones a Medicinas Belén</h1>
+    <p>Gracias por tu apoyo a nuestra labor comunitaria</p>
+  </header>
+
+  <main>
+    <section class="donaciones">
+      <h2>Últimas Donaciones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Donador</th>
+            <th>Monto</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Pérez</td>
+            <td>L. 500.00</td>
+            <td>15/07/2025</td>
+          </tr>
+          <tr>
+            <td>Ana García</td>
+            <td>L. 300.00</td>
+            <td>10/07/2025</td>
+          </tr>
+          <tr>
+            <td>María Torres</td>
+            <td>L. 200.00</td>
+            <td>05/07/2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="formulario">
+      <h2>Realizar una Donación</h2>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+        <label for="monto">Monto (Lps)</label>
+        <input type="number" id="monto" placeholder="Ej. 500" required>
+
+        <label for="mensaje">Mensaje (opcional)</label>
+        <textarea id="mensaje" rows="3" placeholder="¿Deseas dejar algún mensaje?"></textarea>
+
+        <button type="submit">Donar ahora</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Medicinas Belén | Gracias por tu generosidad 🙏</p>
+  </footer>
+</body>
+</html>
